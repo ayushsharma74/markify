@@ -1,0 +1,25 @@
+{
+  "name": "markify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "nodemon index.ts",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@9.14.2+sha512.6e2baf77d06b9362294152c851c4f278ede37ab1eba3a55fda317a4a17b209f4dbb973fb250a77abc463a341fcb1f17f17cfa24091c4eb319cda0d9b84278387",
+  "dependencies": {
+    "@types/node": "^22.10.5",
+    "blessed": "^0.1.81",
+    "commander": "^13.0.0",
+    "install": "^0.13.0",
+    "marked": "^15.0.5",
+    "nodemon": "^3.1.9"
+  },
+  "devDependencies": {
+    "@types/blessed": "^0.1.25"
+  }
+}
