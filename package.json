@@ -1,13 +1,14 @@
 {
   "name": "@ayushsharma_npm/markify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A CLI tool to convert Markdown files to HTML",
-  "main": "index.ts",
+  "main": "dist/index.js",
+  "type": "module",
   "bin": {
     "markify": "./dist/index.js"
   },
   "scripts": {
-    "dev": "nodemon src/index.ts",
+    "dev": "nodemon --exec node --loader ts-node/esm src/index.ts",
     "build": "tsc"
   },
   "keywords": [],
@@ -15,7 +16,6 @@
   "license": "MIT",
   "packageManager": "pnpm@9.14.2+sha512.6e2baf77d06b9362294152c851c4f278ede37ab1eba3a55fda317a4a17b209f4dbb973fb250a77abc463a341fcb1f17f17cfa24091c4eb319cda0d9b84278387",
   "dependencies": {
-    "@ayushsharma_npm/markify": "^1.0.0",
     "@types/node": "^22.10.5",
     "blessed": "^0.1.81",
     "commander": "^13.0.0",

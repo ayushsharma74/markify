@@ -1,8 +1,6 @@
 #!/usr/bin/env node
-import { Command } from 'commander';
-import createInterface from './cli';
-
-const program = new Command();
+import { program } from 'commander';
+import createInterface from './cli.js';
 
 program
     .argument('<input>', 'Path to the input Markdown file')
@@ -12,3 +10,5 @@ program
     });
 
 program.parse(process.argv);
+
+export default program;
