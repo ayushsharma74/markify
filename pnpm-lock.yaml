@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@ayushsharma_npm/markify':
+        specifier: ^1.0.0
+        version: 1.0.0(typescript@5.7.2)
       '@types/node':
         specifier: ^22.10.5
         version: 22.10.5
@@ -35,6 +38,10 @@ importers:
         version: 0.1.25
 
 packages:
+
+  '@ayushsharma_npm/markify@1.0.0':
+    resolution: {integrity: sha512-n7WKYAKH/GSGZ66QvEAurr8J6zBI+2xlJ8RYEnTdXtRV41jxgcJOroZqKoKbrOE7AhQZ63Z/7M43p6gYPZ1uaA==}
+    hasBin: true
 
   '@cspotcode/source-map-support@0.8.1':
     resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
@@ -258,6 +265,20 @@ packages:
     engines: {node: '>=6'}
 
 snapshots:
+
+  '@ayushsharma_npm/markify@1.0.0(typescript@5.7.2)':
+    dependencies:
+      '@types/node': 22.10.5
+      blessed: 0.1.81
+      commander: 13.0.0
+      install: 0.13.0
+      marked: 15.0.5
+      nodemon: 3.1.9
+      ts-node: 10.9.2(@types/node@22.10.5)(typescript@5.7.2)
+    transitivePeerDependencies:
+      - '@swc/core'
+      - '@swc/wasm'
+      - typescript
 
   '@cspotcode/source-map-support@0.8.1':
     dependencies:
